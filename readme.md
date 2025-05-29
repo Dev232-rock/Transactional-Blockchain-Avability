@@ -2,12 +2,6 @@
 
 A simple transactional blockchain implemented in python
 
-## Support ❤️
-
-If you find the project useful, please consider supporting, or contributing.
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/dubniczky)
-
 ## Methodology
 
 The blockchain consists of blocks represented by class objects. Each object has inherit values visible in the examples. Before mining a block, the hash of the previously mined block is added to the current block to establish the chain. Each block's hash has to start with a certain number of zero hex values in order to be considered valid. This is achieved through trial and error by iterating the proof variable.
@@ -18,8 +12,8 @@ The blockchain consists of blocks represented by class objects. Each object has 
 from blockchain import Blockchain
 
 bc = Blockchain(5) # Complexity
-bc.add({'from': 'user1', 'to': 'user2', 'amount': 122.85})
-bc.add({'from': 'user2', 'to': 'user1', 'amount': 4.99})
+bc.add({'from': 'user1', 'to': 'user2', 'amount': 173.85})
+bc.add({'from': 'user2', 'to': 'user1', 'amount': 2.33})
 print(bc.validate())
 bc.print()
 ```
@@ -47,7 +41,7 @@ bc.print()
    Hash: 0003c46ac8f27e17ec8110a0a90e56236ef5746a99d0c71dec6353ac86eb7809
    Prev: 00038eceacbfad7d8c55116c6bf1c23c09196b61645a1c190c274c610c0cc0a3
    Time: 2022-05-12 02:29:17.928376
-   Data: heyo
+   Data: Bob
    Prof: 977
    Comp: 3
 }
